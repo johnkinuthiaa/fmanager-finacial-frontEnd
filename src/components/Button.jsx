@@ -1,11 +1,15 @@
 import "./styles/button.css"
-const Button =({text,background,icon})=>{
+import {useNavigate} from "react-router-dom";
+const Button =({text,background,icon,navigateTo})=>{
+    const navigate =useNavigate();
     const buttonStyles ={
         outline:"none"
     }
     return(
         <div className={"button"}>
-            <button style={buttonStyles}>{text}{icon}</button>
+            <button style={buttonStyles} onClick={()=>{
+                navigate(navigateTo)
+            }}>{text}{icon}</button>
         </div>
     )
 }

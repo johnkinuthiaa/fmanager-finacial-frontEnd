@@ -38,8 +38,8 @@ const Header =()=>{
                 </nav>
             </div>
             <div style={{display:"flex"}}>
-                <Button text={"Login"} icon={<ArrowOutwardIcon/>} background={"blue"}/>
-                <Button text={"Sign up"} icon={<ArrowOutwardIcon/>} background={"white"}/>
+                <Button text={"Login"} icon={<ArrowOutwardIcon/>} background={"blue"} navigateTo={"/login"}/>
+                <Button text={"Sign up"} icon={<ArrowOutwardIcon/>} background={"white"} navigateTo={"/register"}/>
                 <div className={"theme__changer"}>
                     {themeIcon}
                 </div>

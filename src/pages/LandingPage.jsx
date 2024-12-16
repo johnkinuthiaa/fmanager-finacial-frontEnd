@@ -31,8 +31,8 @@ const LandingPage =()=>{
                 </div>
 
             </div>
-            <div className={"another__section"}>
-                <div>
+            <div className={"second__section"}>
+                <div className={"second__section__text__content"}>
                     <div className={"join__future"}>The future of finance</div>
                     <h1>Our diverse suite of finance solutions</h1>
                     <p>Discover our wide-ranging financial tools. Experience seamless, user-friendly, and efficient
@@ -40,18 +40,27 @@ const LandingPage =()=>{
                 </div>
                 <div className={"images"}>
                     <div className={"left__image__container"}>
-                        <div>
-                            <div>
+                        <div className={"first__container"}>
+                            <div className={"first__container__text"}>
                                 <h3>Automated Savings</h3>
                                 <p>Automatically move money to savings based on personalized financial
                                     recommendations.</p>
                             </div>
-                            <img src={"https://framerusercontent.com/images/MQb4Ycr6eQCR5dmiBbl5QbWP3o.png"}/>
-                            <img src={"https://framerusercontent.com/images/PyJ2qhv7Lb6gkXe5UFwfpMEMlI.svg"}/>
+                            <div style={{display:"flex",flexDirection:"column"}}>
+                                <img src={"https://framerusercontent.com/images/MQb4Ycr6eQCR5dmiBbl5QbWP3o.png"}
+                                     className={"savings__image"}/>
+                                <img src={"https://framerusercontent.com/images/PyJ2qhv7Lb6gkXe5UFwfpMEMlI.svg"}
+                                     className={"insights"}/>
+                            </div>
+
                         </div>
-                        <div>
-                            <img src={"https://framerusercontent.com/images/MQb4Ycr6eQCR5dmiBbl5QbWP3o.png"}/>
-                            <div>
+                        <div className={"insights__container"}>
+                            <div className={"insights__image__container"}>
+                                <img src={"https://framerusercontent.com/images/ZQlA8w8Kgds4EJvOXiEAaROXGkA.svg"}
+                                     className={"insights__image"}/>
+                            </div>
+
+                            <div className={"first__container__text"}>
                                 <h3>Investment Opportunities</h3>
                                 <p>Explore a wide range of investment options tailored to your unique financial goals</p>
                             </div>
@@ -60,8 +69,12 @@ const LandingPage =()=>{
                     </div>
                     <div className={"right__image__container"}>
                         <div>Peaceful tomorrow</div>
-                        <img src={"https://framerusercontent.com/images/cwzvYuxrwyC5BZINFHuxgJbw.png"}/>
-                        <img src={"https://framerusercontent.com/images/VE3dehGxKSwWx7R2LFulo4e80w.svg"}/>
+                        <div style={{display:"flex",flexDirection:"column"}}>
+                            <img src={"https://framerusercontent.com/images/cwzvYuxrwyC5BZINFHuxgJbw.png"}
+                                 className={"pension__image"}/>
+                            <img src={"https://framerusercontent.com/images/VE3dehGxKSwWx7R2LFulo4e80w.svg"}
+                                 className={"pension__graph"}/>
+                        </div>
                         <div>
                             <h1>Retirement Planning</h1>
                             <p>guiding your journey comfortable retirement tools guide.</p>
@@ -71,7 +84,7 @@ const LandingPage =()=>{
                 </div>
 
             </div>
-            <div><h3>More than <span>158 k+</span>users love their financial journey</h3></div>
+
         </div>
     )
 }
