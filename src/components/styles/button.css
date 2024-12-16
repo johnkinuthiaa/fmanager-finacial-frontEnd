@@ -1,0 +1,19 @@
+.button{
+    align-items: center;
+
+}
+.button>button{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    outline: none;
+    justify-content: space-evenly;
+    font-weight: 500;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.button>button>*{
+    padding: 4px;
+}

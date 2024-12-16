@@ -1,0 +1,59 @@
+.landing__page{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    scrollbar-width: thin;
+
+}
+.main__section{
+    display: flex;
+    color:rgb(125, 136, 151);
+    height: 95vh;
+    margin-top: 85px;
+    background-color:rgb(7,12,20);
+    justify-content: space-evenly;
+}
+.main__section>*{
+    margin-top: 50px;
+}
+.main__section__content>*{
+    line-height: 2;
+    margin-top: 10px;
+}
+div>h1{
+    color:#ffffff
+}
+.join__future{
+    padding: 5px;
+    border-radius: 30px;
+    background-color: rgb(24, 30, 38);
+    width: fit-content;
+
+}
+.main__section__right__image__container{
+    display: flex;
+    flex-direction: column;
+}
+.phone__image{
+    height: 495px;
+    width: 245px;
+
+}
+.card__image{
+    height: 302px;
+    width: 203px;
+    margin-top: -400px;
+    margin-left: 150px;
+}
+.users__image{
+    height: 91px;
+    width: 281px;
+    margin-top: -10px;
+    margin-left: -30px;
+
+}
+.another__section{
+    background: rgb(18, 21, 29);
+    height: 100vh;
+
+}

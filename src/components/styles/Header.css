@@ -1,0 +1,10 @@
+.header__navigation>nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__navigation >nav>ul>a{
+    color:rgb(125, 136, 151);
+    text-decoration: none;
+    align-items: center;
+    padding: 5px;
+}
