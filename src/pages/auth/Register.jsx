@@ -1,6 +1,10 @@
-import "./styles/login.css"
+import "../styles/login.css"
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import GoogleIcon from '@mui/icons-material/Google';
+import AppleIcon from '@mui/icons-material/Apple';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 const Register =()=>{
@@ -58,12 +62,22 @@ const Register =()=>{
                     <button type={"submit"} className={"register__button"}>Register</button>
                     <p>or</p>
                     <div className={"sign__with"}>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
+                        <div>
+                            <button><GoogleIcon/></button>
+                        </div>
+                        <div>
+                            <button><AppleIcon/></button>
+                        </div>
+                        <div>
+                            <button><FacebookIcon/></button>
+                        </div>
+                        <div>
+                            <button><GitHubIcon/></button>
+                        </div>
+
                     </div>
                     <div>
-                        <p style={{color:"#fff"}}>Already have an account ? <span onClick={()=>navigate("/login")} style={{cursor:"pointer",textDecoration:"underline"}}>Log in</span></p>
+                        <p style={{color: "#fff"}}>Already have an account ? <span onClick={()=>navigate("/login")} style={{cursor:"pointer",textDecoration:"underline"}}>Log in</span></p>
                     </div>
                 </form>
             </div>

@@ -1,0 +1,14 @@
+.sidebar__container{
+    padding: 10px;
+    margin-left: 10px;
+    height: 100%;
+}
+.sidebar__container>*{
+    margin-top: 30px;
+    width: 100%;
+}
+.sidebar>button{
+    height: fit-content;
+    position: absolute;
+    margin-left: 270px;
+}

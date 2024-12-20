@@ -22,7 +22,7 @@ const LandingPage =()=>{
                         Seamless Transactions,
                         Innovative Solutions,and user Friendly interface.
                     </pre>
-                    <Button icon={<ArrowUpward/>} background={"blue"} text={"Lets get started"}/>
+                    <Button icon={<ArrowUpward/>} background={"blue"} text={"Lets get started"} navigateTo={"/login"}/>
                 </div>
                 <div className={"main__section__right__image__container"}>
                     <img src={"https://framerusercontent.com/images/L06kDydSsKJ8LId4Ou11xQiWas.png"} className={"phone__image"}/>

@@ -1,8 +1,12 @@
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
-import "./styles/login.css"
+import GoogleIcon from '@mui/icons-material/Google';
+import AppleIcon from '@mui/icons-material/Apple';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import "../styles/login.css"
 import {useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Login =()=>{
     const BASE_URL ="http://localhost:8080/api/v1/auth"
@@ -57,12 +61,30 @@ const Login =()=>{
                     <button type={"submit"} className={"register__button"}>Login</button>
                     <p>or</p>
                     <div className={"sign__with"}>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
+                        <div>
+                            <button type={"button"}><GoogleIcon/></button>
+                        </div>
+                        <div>
+                            <button type={"button"}><AppleIcon/></button>
+                        </div>
+                        <div>
+                            <button type={"button"}><FacebookIcon/></button>
+                        </div>
+                        <div>
+                            <button type={"button"}><GitHubIcon/></button>
+                        </div>
                     </div>
                     <div>
-                        <p style={{color: "#fff"}}>Dont have an account ? <span onClick={() => navigate("/register")} style={{cursor:"pointer",textDecoration:"underline"}}>Sign in</span>
+                        <p
+                            style={{color: "#fff"}}>
+                            Dont have an account ?
+                            <span
+                                onClick={() => navigate("/register")}
+
+                                style={{
+                                    cursor: "pointer",
+                                    textDecoration: "underline"
+                            }}>Sign up</span>
                         </p>
                     </div>
                 </form>

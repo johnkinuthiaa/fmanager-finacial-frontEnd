@@ -68,3 +68,25 @@ input{
 input{
     width: 100%;
 }
+.sign__with{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.sign__with>div>button{
+    color: #ffffff;
+    background-color: rgb(0,0,0);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.sign__with>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border: 1px solid rgba(105, 105, 133,0.7);
+    width: 30.33%;
+    border-radius: 5px;
+    cursor: pointer;
+}
