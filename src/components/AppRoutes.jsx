@@ -11,17 +11,6 @@ import Transactions from "./Transactions.jsx";
 const AppRoutes=()=>{
     return(
         <div>
-            <Routes>
-                <Route path={"/dashboard"} element={<DashBoard/>}/>
-                <Route path={"/expenditure"} element={<Expenditure/>}/>
-                <Route path={"/income"} element={<Income/>}/>
-                <Route path={"/loans"} element={<Loans/>}/>
-                <Route path={"/savings"} element={<Savings/>}/>
-                <Route path={"/budget"} element={<Budget/>}/>
-                <Route path={"/transactions"} element={<Transactions/>}/>
-                <Route path={"/budget"} element={<Budget/>}/>
-            </Routes>
-
         </div>
     )
 }

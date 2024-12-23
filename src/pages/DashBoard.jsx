@@ -19,8 +19,8 @@ const DashBoard =()=>{
         }
     })
     const dashboardStyles ={
-        margin:"0 auto",
-        width:"95%",
+        margin:"100px auto",
+        width:"80%",
         display:"flex",
         flexDirection:"column",
         alignContent:"center",

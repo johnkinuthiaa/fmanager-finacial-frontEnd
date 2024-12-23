@@ -40,7 +40,11 @@ const SideBar =()=>{
     const sideBar ={
         display:"flex",
         height:"100%",
-        backgroundColor:"rgb(247,247,255)"
+        backgroundColor:"rgb(247,247,255)",
+        position:"fixed",
+        left:"0",
+        top:"0",
+        marginTop:"90px"
 
     }
     return(
@@ -64,7 +68,7 @@ const SideBar =()=>{
                         />
                         <h3 style={{marginLeft:"10px"}}>{userDetails.username}</h3>
                     </div>
-                    <p><KeyboardArrowDownIcon/></p>
+                    <p onClick={()=>setCollapsed(true)}><KeyboardArrowDownIcon/></p>
 
                 </div>
                 <SidebarCard text={"dashboard"} icon={<WidgetsIcon/>} color={"rgb(18, 48, 174)"} to={"/dashboard"}/>
