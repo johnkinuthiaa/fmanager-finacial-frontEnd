@@ -11,7 +11,9 @@ import Income from "./pages/Income.jsx";
 import Loans from "./pages/Loans.jsx";
 import Savings from "./pages/Savings.jsx";
 import Budget from "./pages/Budget.jsx";
-import Transactions from "./pages/Transactions.jsx";
+import Transactions from "./components/Transactions.jsx";
+import SendMoneyPage from "./pages/SendMoneyPage.jsx";
+import ErrorPage from "./pages/404ErrorPage.jsx";
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
             <Route path={"/home"} element={<HomePage/>}/>
             <Route path={"/register"} element={<Register/>}/>
             <Route path={"/login"} element={<Login/>}/>
+            <Route path={"/send"} element={<SendMoneyPage/>}/>
+            <Route path={"/**"} element={<ErrorPage/>}/>
         </Routes>
     </>
   )

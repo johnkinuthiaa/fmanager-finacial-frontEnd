@@ -6,7 +6,7 @@ import Income from "../pages/Income.jsx";
 import Loans from "../pages/Loans.jsx";
 import Savings from "../pages/Savings.jsx";
 import Budget from "../pages/Budget.jsx";
-import Transactions from "../pages/Transactions.jsx";
+import Transactions from "./Transactions.jsx";
 
 const AppRoutes=()=>{
     return(

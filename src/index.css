@@ -4,3 +4,17 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.credit{
+    background: linear-gradient(30deg, rgb(10,0,10,0.9), rgb(16, 101, 227));
+    cursor: pointer;
+}
+.credit:hover{
+    z-index: 2;
+    background: linear-gradient(30deg, rgb(20,50,100), rgb(190, 100, 205));
+}
+.send__money__btn{
+    font-weight: 700;
+}
+
+
+
