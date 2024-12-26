@@ -13,7 +13,6 @@ const Transactions =()=>{
         setTransactions(data.transactions)
 
     })
-
     const transactionsStyle = {
         margin:"10px auto",
         width:"80%",
