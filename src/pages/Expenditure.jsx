@@ -1,10 +1,12 @@
 import {useEffect, useState} from "react";
+import ModalNotification from "../components/ModalNotification.jsx";
 
 const Expenditure =()=>{
 
     const [exName,setExName] =useState("")
     const[category,setCategory] =useState("")
     const[amount,setAmount] =useState(0)
+    const[showModal,setShowModal] =useState(false)
     const[expendituresCreated,setExpendituresCreated] =useState([])
     const userId =1
     const myHeaders =new Headers()
@@ -37,13 +39,25 @@ const Expenditure =()=>{
         })
         if(response.ok){
             const data =await response.json()
-            alert(data.message)
+            setShowModal(true)
+            setTimeout(()=>{
+                setShowModal(false)
+            },3000)
+            // alert(data.message)
+            const date =new Date()
+            setInterval(()=>{
+                console.log(date.getSeconds())
+            },1000)
+
         }else{
             console.log("network error")
         }
     })
+    const expenditureContent ={
+        marginTop:"100px"
+    }
     return(
-        <div className={"expenditure"} style={{marginTop:"100px"}}>
+        <div className={"expenditure"} style={expenditureContent}>
             <h1>Enter a new expenditure</h1>
             <form onSubmit={(e)=>{
                 e.preventDefault()
@@ -52,11 +66,26 @@ const Expenditure =()=>{
                 <input type={"text"} placeholder={"new expenditure's name"} required={true} onChange={(e)=>{
                     setExName(e.target.value)
                 }}/>
-                <input type={"number"} placeholder={"amount"} required={true} onChange={(e)=>{
+                <input type={"number"} placeholder={"amount"} required={true} min={0} onChange={(e)=>{
                     setAmount(e.target.value)
                 }}/>
                 <input type={"text"} placeholder={"expenditure category"} required={true} onChange={(e)=>setCategory(e.target.value)}/>
-                <button type={"submit"}>create</button>
+                <div style={{width: "80%", display: "flex", justifyContent: "center", alignItems: "center"}}>
+                    <button type={"submit"} style={{padding:"10px 15px",
+                        fontSize:"16px",
+                        fontWeight:"600"
+                        ,cursor:"pointer",
+                        color:"#ffffff",
+                        backgroundColor:"rgb(16, 101, 227",
+                        border:"none",
+                        outline:"none",
+                        borderRadius:"15px"
+                    }}>create</button>
+
+                    {showModal && <ModalNotification message={"new expenditure created"}/>}
+
+                </div>
+
             </form>
             <div className={"existing__expenditures"} >
                 <h1 style={{color:"black"}}>My expenditures</h1>

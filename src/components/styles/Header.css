@@ -8,3 +8,18 @@
     align-items: center;
     padding: 5px;
 }
+@media  screen and (max-width: 768px ){
+    .header__navigation{
+        display: none;
+
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    form{
+        width: 100%;
+    }
+
+
+}

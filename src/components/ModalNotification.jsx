@@ -1,14 +1,19 @@
 
-const ModalNotification =()=>{
+const ModalNotification =({message})=>{
     const modalStyles ={
-        top:0,
+        top:90,
         right:0,
-        width:"100px",
-        height:"50px"
+        position:"absolute",
+        width:"fit-content",
+        backgroundColor:"#fff",
+        boxShadow:"0 0 10px rgb(0,0,0)",
+        padding:"10px",
+        fontSize:"16px",
+        fontWeight:"bold"
     }
     return(
         <div className={"modal"} style={modalStyles}>
-            <div>TIg ing nfb isnv</div>
+            <div>{message}</div>
         </div>
     )
 }

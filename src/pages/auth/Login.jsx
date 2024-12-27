@@ -49,10 +49,13 @@ const Login =()=>{
                     e.preventDefault()
                     userLogin()
                 }}>
-                    <input type={"email"} placeholder={"Email"} onChange={(e)=>setEmail(e.target.value)}/>
-                    <input type={"text"} placeholder={"Username"} onChange={(e)=>setUsername(e.target.value)}/>
+                    <input type={"email"} placeholder={"Email"}
+                           onChange={(e)=>setEmail(e.target.value)}/>
+                    <input type={"text"} placeholder={"Username"}
+                           onChange={(e)=>setUsername(e.target.value)}/>
                     <div className={"password__container"}>
-                        <input type={showPassword ? "text" : "password"} placeholder={"Password"} required={true} onChange={(e)=>setPassword(e.target.value)}/>
+                        <input type={showPassword ? "text" : "password"} placeholder={"Password"} required={true}
+                               onChange={(e)=>setPassword(e.target.value)}/>
                         <button type={"button"} onClick={() => changePasswordVisibility()}
                                 className={"show__password"}>{showPassword ?
                             <VisibilityIcon/> :
