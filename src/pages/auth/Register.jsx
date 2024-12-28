@@ -29,7 +29,8 @@ const Register =()=>{
             method:"POST",
             body:JSON.stringify({
                 username:`${firstName}${lastName.concat("#1user")}`,
-                password:`${password}`
+                password:password,
+                email:email
             }),
             headers:headers
         })
