@@ -22,6 +22,7 @@ const Register =()=>{
     const changePasswordVisibility =()=>{
         setShowPassword(!showPassword)
     }
+
     const headers =new Headers();
     headers.append("Content-Type","application/json")
     const submitLoginDetails =(async ()=>{
