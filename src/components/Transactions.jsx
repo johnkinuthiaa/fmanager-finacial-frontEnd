@@ -13,6 +13,8 @@ const Transactions =()=>{
         setTransactions(data.transactions)
 
     })
+    // learning about this today...very helpful
+    console.table(transactionDone?transactionDone:"")
     const transactionsStyle = {
         margin:"10px auto",
         width:"80%",
